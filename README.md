@@ -5,7 +5,9 @@
 [![Brightside](https://img.shields.io/badge/by-t3brightside.com-orange.svg?style=flat)](https://t3brightside.com)
 
 **TYPO3 CMS extension to connect Addresses and Personnel records bidirectionally.**
-Demo:
+
+**[Demo](https://microtemplate.t3brightside.com/)**
+
 ## Installation
  - `composer req t3brightside/addressespersonnel`
  - Include static template
