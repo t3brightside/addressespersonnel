@@ -1,6 +1,6 @@
 {
   "name": "t3brightside/addressespersonnel",
-  "description": "TYPO3 CMS extension to connect Addresses and Personnel extensions.",
+  "description": "TYPO3 CMS extension to connect Addresses and Personnel bidirectionally.",
   "type": "typo3-cms-extension",
   "keywords": ["TYPO3", "addresses", "personnel"],
   "license": "GPL-2.0-or-later",
