@@ -1,0 +1,26 @@
+{
+  "name": "t3brightside/addressespersonnel",
+  "description": "TYPO3 CMS extension to connect Addresses and Personnel extensions.",
+  "type": "typo3-cms-extension",
+  "keywords": ["TYPO3", "addresses", "personnel"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://t3brightside.com",
+  "authors": [
+      {
+          "name": "Tanel Põld",
+          "role": "Developer",
+          "homepage": "https://t3brightside.com"
+      }
+  ],
+  "require": {
+    "typo3/cms-core": "^12.4 || ^13.0",
+    "typo3/cms-fluid-styled-content": "^12.4 || ^13.0",
+    "t3brightside/addresses": "^1.0",
+    "t3brightside/personnel": "^4.0"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "addressespersonnel"
+    }
+  }
+}

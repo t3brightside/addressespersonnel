@@ -1,0 +1,90 @@
+tt_content.addresses_frompages {
+    dataProcessing.10 {
+        dataProcessing {
+            90 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            90 {
+                table = tx_personnel_domain_model_person
+                selectFields = tx_personnel_domain_model_person.*
+                pidInList.data = site:rootPageId
+                recursive = 99
+                join = tx_addresses_personnel_mm ON (tx_addresses_personnel_mm.uid_local=tx_personnel_domain_model_person.uid)
+                where.dataWrap = tx_addresses_personnel_mm.uid_foreign = {field:uid}
+                orderBy = sorting_foreign
+                as = personnel
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10.references.fieldName = images
+                    10.as = images
+                }
+            }
+        }
+    }
+}
+
+tt_content.addresses_selected {
+    dataProcessing.10 {
+        dataProcessing {
+            90 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            90 {
+                table = tx_personnel_domain_model_person
+                selectFields = tx_personnel_domain_model_person.*
+                pidInList.data = site:rootPageId
+                recursive = 99
+                join = tx_addresses_personnel_mm ON (tx_addresses_personnel_mm.uid_local=tx_personnel_domain_model_person.uid)
+                where.dataWrap = tx_addresses_personnel_mm.uid_foreign = {field:uid}
+                orderBy = sorting_foreign
+                as = personnel
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10.references.fieldName = images
+                    10.as = images
+                }
+            }
+        }
+    }
+}
+tt_content.personnel_frompages {
+    dataProcessing.10 {
+        dataProcessing {
+            90 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            90 {
+                table = tx_addresses_domain_model_address
+                selectFields = tx_addresses_domain_model_address.*
+                pidInList.data = site:rootPageId
+                recursive = 99
+                join = tx_addresses_personnel_mm ON (tx_addresses_personnel_mm.uid_foreign=tx_addresses_domain_model_address.uid)
+                where.dataWrap = tx_addresses_personnel_mm.uid_local = {field:uid}
+                orderBy = tx_addresses_personnel_mm.sorting
+                as = addresses
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10.references.fieldName = images
+                    10.as = images
+                }
+            }
+        }
+    }
+}
+
+tt_content.personnel_selected {
+    dataProcessing.10 {
+        dataProcessing {
+            90 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            90 {
+                table = tx_addresses_domain_model_address
+                selectFields = tx_addresses_domain_model_address.*
+                pidInList.data = site:rootPageId
+                recursive = 99
+                join = tx_addresses_personnel_mm ON (tx_addresses_personnel_mm.uid_foreign=tx_addresses_domain_model_address.uid)
+                where.dataWrap = tx_addresses_personnel_mm.uid_local = {field:uid}
+                orderBy = tx_addresses_personnel_mm.sorting
+                as = addresses
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10.references.fieldName = images
+                    10.as = images
+                }
+            }
+        }
+    }
+}
