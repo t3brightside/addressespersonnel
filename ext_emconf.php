@@ -1,12 +1,12 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-	'title' => 'Addresses',
-	'description' => 'Address lists',
+	'title' => 'Addressespersonnel',
+	'description' => 'Connect ext:addresses and ext:personnel records.',
 	'category' => 'fe',
 	'version' => '1.0.0',
 	'state' => 'stable',
 	'clearcacheonload' => true,
-	'author' => 'Tanel Põld, Nikolay Orlenko',
+	'author' => 'Tanel Põld',
 	'author_email' => 'tanel@brightside.ee',
 	'author_company' => 'Brightside OÜ / t3brightside.com',
 	'constraints' => [
