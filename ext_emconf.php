@@ -1,6 +1,6 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-	'title' => 'Addresses & Personnel',
+	'title' => 'Addresses ⇄ Personnel',
 	'description' => 'Bidirectional connection between ext:addresses and ext:personnel records.',
 	'category' => 'fe',
 	'version' => '1.0.0',
