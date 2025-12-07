@@ -13,10 +13,10 @@
       }
   ],
   "require": {
-    "typo3/cms-core": "^12.4 || ^13.0",
-    "typo3/cms-fluid-styled-content": "^12.4 || ^13.0",
-    "t3brightside/addresses": "^1.0",
-    "t3brightside/personnel": "^4.0"
+    "typo3/cms-core": "^12.4 || ^13.0 || ^14.0",
+    "typo3/cms-fluid-styled-content": "^12.4 || ^13.0 || ^14.0",
+    "t3brightside/addresses": "^2.0",
+    "t3brightside/personnel": "^5.0"
   },
   "extra": {
     "typo3/cms": {

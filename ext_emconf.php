@@ -1,9 +1,9 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'Addresses ⇄ Personnel',
-	'description' => 'Bidirectional connection between ext:addresses and ext:personnel records.',
+	'description' => 'Bidirectional connection between ext:addresses and ext:personnel.',
 	'category' => 'fe',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'state' => 'stable',
 	'clearcacheonload' => true,
 	'author' => 'Tanel Põld',
@@ -11,10 +11,9 @@ $EM_CONF[$_EXTKEY] = [
 	'author_company' => 'Brightside OÜ / t3brightside.com',
 	'constraints' => [
 		'depends' => [
-			'typo3' => '12.4.0 - 13.9.99',
-			'fluid_styled_content' => '12.4.0 - 13.9.99',
-			'addresses' => '1.0.0 - 1.99.99',
-            'personnel' => '4.0.2-4.99.99',
+			'typo3' => '12.4.0 - 14.9.99',
+			'addresses' => '2.0.0 - 2.99.99',
+            'personnel' => '5.0.0-5.99.99',
 		],
 	],
 ];
